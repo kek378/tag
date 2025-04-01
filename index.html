@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Кнопка-перделка</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+.big-button {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 500%;
+  background-color: #f00;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+</style>
+</head>
+<body>
+
+<button class="big-button" onclick="playSound()">Жми сюда, сука!</button>
+
+<audio id="sound" src="https://www.myinstants.com/media/sounds/sex.mp3" preload="auto"></audio>
+
+<script>
+function playSound() {
+  var sound = document.getElementById("sound");
+  sound.play();
+}
+</script>
+
+</body>
+</html>
